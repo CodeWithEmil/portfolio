@@ -1,5 +1,5 @@
 footer {
-   /* border: solid red; */
+    border: solid red; 
    height: 23rem;
    width: 100%;
    left: 0;
@@ -28,16 +28,17 @@ footer a:visited, footer a:not(:visited) {
 }
 
 .footer-section {
-   /* border: solid navy; */
+    border: solid navy; 
    width: 100%;
    padding-bottom: 5rem;
    /*
    padding-left: 3.75rem;
-   gap: 30px;
    */
+   gap: 1.875rem;
    display: flex;
    flex-direction: column;
    justify-content: flex-end;
+   align-items: center;
 }
 
 footer ul {
@@ -46,7 +47,7 @@ footer ul {
 
 .footer-socials {
    gap: 1.25rem;
-   /* border: solid lime; */
+    border: solid lime; 
 }
 
 .footer-socials a {
@@ -59,7 +60,7 @@ footer ul {
 
 .footer-links {
    gap: 0.625rem;
-   /* border: solid orange; */
+    border: solid orange; 
 }
 
 .footer-links a:hover {
@@ -68,7 +69,7 @@ footer ul {
 
 .footer-legal {
    font-size: 0.75rem;
-   /* border: solid plum; */
+    border: solid plum; 
    color: #d6dfeda0;
 }
 
@@ -91,14 +92,27 @@ footer ul {
    pointer-events: none;
 }
 
-@media only screen and (width >= 420px) {
+@media only screen and (width >= 490px) {
    .footer-section {
-      align-items: center;
       padding-left: 0;
       gap: 1.25rem;
    }
 
    .footer-links {
       gap: 1.25rem;
+   }
+}
+
+@media only screen and (max-width: 490px) {
+   .footer-svg {
+      transform: scaleY(2.5) scaleX(2);
+   }
+
+   .footer-section {
+      gap: 0.75rem;
+   }
+
+   .footer-links {
+      gap: 0.5rem;
    }
 }
